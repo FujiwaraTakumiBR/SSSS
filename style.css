@@ -1,0 +1,462 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background-color: #797979;
+	background-image: url(images/y-so-serious.png);
+	background-repeat: repeat;
+	background-attachment: fixed;
+}
+header {
+	width: 74%;
+	height: auto;
+	margin: 0 auto;
+	background-color: #CDB116;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 10px 3%;
+	position: sticky;
+	top: 0;
+	z-index: 1000;
+}
+/*menu para hamburguesas*/
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+  padding: 0 20px;
+}
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+.topnav .icon {
+  display: none;
+}
+
+
+/*finmenu hamburguesas*/ 
+main {
+	width: 80%;
+	height: 100%;
+	overflow: hidden;
+	margin: 0 auto;
+	background-color: #22968f;
+}
+footer {
+	width: 80%;
+	height: 100px;
+	margin: 0 auto;
+	background-color: #745A5A;
+}
+section {
+	width: 96%;
+	height: auto;
+	overflow: hidden;
+	margin: 0 auto;
+	background-color: #22968f;
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding: 2%;
+}
+#intro {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	background-image: url(images/pexels-rachel-claire-5865282-main.jpg);
+	background-position: center left;
+	animation-name: animacion-01;
+	animation-duration: 1.5s;
+	animation-timing-function: ease;
+}
+
+#intro > div {
+	width: 40%;
+	height: auto;
+	padding: 5%;
+	background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+}
+@keyframes animacion-01 {
+
+	from {
+		filter: opacity(0%);
+		transform: translateY(-600px);
+	}
+	to {
+		filter: opacity(100%);
+		transform: translateY(0);
+	}
+}
+.container-01, .container-02 {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.container-01 > div{
+	width: 26%;
+	background-color: #6DB822;
+	margin: 1%;
+	padding: 1%;
+}
+.container-02 > div{
+	width: 36%;
+	background-color: #5847B4;
+	margin: 1%;
+	padding: 1%;
+}
+.item-fijo {
+	background: #FFE4C4;
+	padding: 10px;
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+}
+/* TIPOGRAFIAS */
+:root {
+	font-size: 18px; /*MEDIDA BASE: 16px = 1rem */
+}
+@font-face {
+	font-family: Rogers; 
+	src: url(fonts/rogers.ttf);
+}
+#intro h1, #intro p {
+	color: #ffffff;
+	text-shadow: 5px 5px 8px #844031;
+}
+h1 {
+	color: #8e5d25;
+	font-size: 4rem;
+	line-height: 6rem;
+	font-family: 'Rogers', serif;
+	font-weight: 900;
+}
+h2 {
+	color: white;
+	font-size: 2rem;
+	line-height: 3rem;
+	font-family: 'Merriweather', serif;
+	font-weight: 700;
+}
+h3 {
+	color: white;
+	font-size: 1.6rem;
+	line-height: 2.4rem;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 900;
+}
+p {
+	color: darkblue;
+	font-size: 1rem;
+	line-height: 1.5rem;
+	font-family: 'Roboto', sans-serif;
+	font-size: 400;
+}
+.texto-footer{
+	color: #000;
+	font-size: 0.8rem;
+	line-height: 1.2rem;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	text-align: center;
+	padding: 10px 30px;
+	margin: 0 auto;
+}
+/*IMAGENES */
+.container-01 img, .container-02 img {
+width: 90%;
+border-radius: 20px;
+margin:5%;
+box-shadow: 5px 5px 5px #0005b5;
+position: relative;
+bottom: 6px;
+}
+/*ENLACES */
+a.enlace-imagen {
+	filter: none;
+}
+a.enlace-imagen:hover {
+	filter: brightness(50%);
+}
+a.enlace-simple {
+	color: darkblue;
+	font-size: 1rem;
+	line-height: 1.5rem;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 700;
+}
+a.enlace-simple:hover {
+	color: darkred;
+}
+a.boton01 {
+	color: darkblue;
+	font-size: 1rem;
+	line-height: 1.5rem;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 700;
+	background-color: #EA6ED9;
+	padding: 10px 50px;
+	text-decoration: none;
+	border-radius: 40px;
+	margin: 10px;
+	display: inline-block;
+	transition-property: all;
+	transition-duration: 2s;
+	transition-timing-function: ease;
+}
+a.boton01:hover {
+	color: cyan;
+	background-color: darkred;
+	transform: scale(1.2) translateY(-6px);
+
+}
+/* MENU SUPERIOR */
+.topnav1{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+.topnav1 a {
+	color: white;
+	font-size: 1rem;
+	line-height: 1.5rem;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 700;
+	text-decoration: none;
+	margin: 0 20px;
+
+}
+.topnav a:hover {
+	color: cyan;
+}
+/*ESTRUCTURA PAGINA INTERNA */
+.interno {
+	display: flex;
+	flex-direction: row;
+}
+.sidenav{
+	display: flex;
+	flex-direction: column;
+	width: 30%;
+	background-color: #49BA1E;
+
+} 
+.sidenav a{
+	color: white;
+	font-size: 1rem;
+	line-height: 1.5rem;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 700;
+	text-decoration: none;
+	margin: 0 20px;
+}
+.sidenav a:hover {
+	color: darkslateblue;
+}
+.contenidos{
+	width: 70%;
+
+}
+/* MULTIMEDIA */
+video {
+	width: 80%;
+	height: auto;
+}
+.container {
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+  }
+	  
+	  /* Then style the iframe to fit in the container div with full height and width */
+	  .responsive-iframe {
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		width: 100%;
+		height: 100%;
+		border: 0;
+	  }
+	  
+	 
+
+/*FORMULARIO*/
+
+
+form {
+	width: 60%;
+	height: auto;
+	background-color: #1f7771;
+	margin: 0 auto;
+	padding: 2%;
+	display: flex;
+	flex-direction: column;
+	font-family: 'Roboto', sans-serif;
+}  
+input, textarea, label, select{
+	padding: 1%;
+	margin: 5px 0;
+	font-family: 'Roboto', sans-serif;
+	font-size: 1rem;
+}
+label {
+	text-align: left;
+}
+textarea {
+	min-height: 200px;
+	resize: vertical;
+
+}
+input[type=text], select, textarea, input[type=search] {
+	background-color: #fff ;
+	border: 1px solid #122423;
+}
+
+input[type=text]:hover, select:hover, textarea:hover, input[type=search]:hover {
+	background-color: #cbcf76 ;
+	border: 1px solid #000;
+	
+}
+
+input[type=text]:focus, select:focus, textarea:focus, input[type=search]:focus {
+	background-color: rgb(175, 14, 14);
+	border: 1px solid #000;
+	
+}
+input[type=search] {
+	width: 50%;
+	background-image: url(images/icons8-búsqueda-50.png);
+	background-repeat: no-repeat;
+	background-position: left;
+	padding: 10px 10px 10px 50px;
+	transition: width 0.4s ease;
+}
+input[type=search]:focus {
+	width: 100%;
+
+}
+input[type=submit] {
+	cursor: pointer;
+	color: darkblue;
+	font-size: 1rem;
+	line-height: 1.5rem;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 700;
+	border-radius: 40px;
+	background-color: #EA6ED9;
+	border: 0;
+
+}
+input[type=submit]:hover {
+	color: cyan;
+	background-color: darkred;
+}
+/*MEDIA QUERIES PARA MOVILES */
+
+@media screen and (max-width:768px) {
+
+body {
+	background-color: #9e96cf;
+
+}
+header, main, footer {
+	width: 100%;
+}
+header{
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	padding: 0;
+	padding-top: 20px;
+	position: static;
+}
+header img{
+	width: 40%;
+}
+.topnav1 {
+	flex-direction: column;
+	width: 100%;
+	text-align: center;
+}
+.topnav1 a{
+	padding: 10 px 0;
+	border-bottom: 1px solid #bc7d2f;
+	width: 100%;
+}
+.topnav1 a:hover {
+	background-color: #000;
+}
+  /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 768px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 768px) {
+	.topnav {
+		width: 100%;
+	}
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+ .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+.container-01, .container-02 {
+	flex-direction: column;
+}
+.container-01 > div, .container-02 > div {
+	width: 96%;
+}
+
+h1{
+	font-size: 2.4rem;
+	line-height: 3.6rem;
+}
+#intro {
+	background-position: center;
+}
+#intro > div {
+	width: 100%;
+	margin-top:400px;
+	background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+
+}
+.interno {
+	flex-direction: column;
+	width:100%;
+	text-align: center;
+}
+form {
+	width: 96%;
+}
+  /*FIN DE MEDIA QUERIES PARA MOVILES (NO BORRAR) */
+}
